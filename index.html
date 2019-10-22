@@ -9,37 +9,42 @@
 </head>
 <body>
   <div class="display">
-
+    <input type="text" name="" value="">
   </div>
   <div class="buttons">
     <div class="number-buttons">
       <div class="seven-to-nine">
-        <button id="7" type="button" name="button">7</button>
-        <button id="8" type="button" name="button">8</button>
-        <button id="9" type="button" name="button">9</button>
+        <!--clicked(this) jsのfunctionをhtmlできる/this自分の要素のがargumentとし
+        て送られる-->
+        <button id="7" type="button" onclick="clicked(this)">7</button>
+        <button id="8" type="button" onclick="clicked(this)">8</button>
+        <button id="9" type="button" onclick="clicked(this)">9</button>
       </div>
       <div class="four-to-six">
-        <button id="4" type="button" name="button">4</button>
-        <button id="5" type="button" name="button">5</button>
-        <button id="6" type="button" name="button">6</button>
+        <button id="4" type="button" onclick="clicked(this)">4</button>
+        <button id="5" type="button" onclick="clicked(this)">5</button>
+        <button id="6" type="button" onclick="clicked(this)">6</button>
       </div>
       <div class="one-to-three">
-        <button id="1" type="button" name="button">1</button>
-        <button id="2" type="button" name="button">2</button>
-        <button id="3" type="button" name="button">3</button>
+        <button id="1" type="button" onclick="clicked(this)">1</button>
+        <button id="2" type="button" onclick="clicked(this)">2</button>
+        <button id="3" type="button" onclick="clicked(this)">3</button>
       </div>
     </div>
     <div class="arithemtic-buttons">
-      <button id="delete" type="button" name="button">DELETE</button>
       <div class="container">
-        <button id="plus" type="button" name="button">+</button>
-        <button id="minus" type="button" name="button">-</button>
+        <button id="delete_one" type="button" onclick="clicked(this)">DELETE</button>
+        <button id="delete_all" type="button" onclick="clicked(this)">C</button>
       </div>
       <div class="container">
-        <button id="divide" type="button" name="button">÷</button>
-        <button id="multiply" type="button" name="button">×</button>
+        <button id="plus" type="button" onclick="clicked(this)">+</button>
+        <button id="minus" type="button" onclick="clicked(this)">-</button>
       </div>
-      <button id="equal" type="button" name="button">=</button>
+      <div class="container">
+        <button id="divide" type="button" onclick="clicked(this)">÷</button>
+        <button id="multiply" type="button" onclick="clicked(this)">×</button>
+      </div>
+      <button id="equal" type="button" onclick="clicked(this)">=</button>
 
     </div>
   </div>
