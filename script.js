@@ -1,6 +1,6 @@
 var display=document.querySelector(".display input");
-let num=""
 function clicked(element){
+    let num=display.value;
   //isNan=not a number=>trueなので注意
     if (element.id==="delete_one"){
       num=num.slice(0,-1);
@@ -13,9 +13,10 @@ function clicked(element){
       num=num.replace(/×/g,"*");
       num=num.replace(/÷/g,"/");
       console.log(num);
-      num=eval(num);
+      num=eval(num).toString();
     }else {
         num=num+element.innerHTML;
     }
     display.value=num;
+    console.log(num);
 }
